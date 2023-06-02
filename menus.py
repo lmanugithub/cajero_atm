@@ -1,10 +1,11 @@
 from consultar import consultar_saldo
 import retirar
 import depositar
+import data.usuarios
 
 
 
-def menu_principal():
+def menu_principal(user):
     
     while True:
         print ('''*********ATM SIMULACION BANCARIO*************\n''')
@@ -18,10 +19,10 @@ def menu_principal():
         opcion=int(input('Seleciona la Opcion que deseas:'))
 
         if (opcion==1):
-            consultar_saldo()
+            consultar_saldo(user)
 
         elif (opcion==2):
-            retirar.retirar_efectivo()
+            retirar.retirar_efectivo(user)
 
         elif (opcion==3):
             depositar.depositar_cuenta()

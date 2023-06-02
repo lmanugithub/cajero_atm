@@ -1,13 +1,19 @@
 USUARIOS = {
     'manu':'7548' ,
-    'stef':'0613'
+    'stef':'0613' ,
+    'admin':'123'
+}
+BALANCE ={
+    'manu':3000,
+    'stef':4500,
+    'admin':10000000
 }
 
 def palabra_clave(usuario,password):
     i=0
     while i < 3:
         if USUARIOS[usuario] == password:
-            return True
+            return True,USUARIOS[usuario] 
         else:
             password = input('Digite otra vez su contraseña: ')
             i += 1

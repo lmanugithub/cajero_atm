@@ -14,8 +14,9 @@ def inicio():
     print("\t***********************") 
     print('\n')
     print('\n')   
-    if validacion.validacion():
-        menus.menu_principal()        
+    if validacion.validacion()[0]:
+        user = validacion.validacion()[1]
+        menus.menu_principal(user)        
 
 if __name__=='__main__':
     inicio()
