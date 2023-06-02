@@ -9,5 +9,7 @@ def validacion():
         else:
             return False
     else:
-        print('\n\t Gracias por confiar en nosostros')
+        print('\nGracias por confiar en nosostros')
         return False
+if __name__=='__main__':
+    pass
